@@ -1,0 +1,208 @@
+/* body Style */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* WhatsApp Floating Button */
+  .whatsapp-float {
+  position: fixed; /* Ikon tetap di posisi meskipun halaman digulir */
+  bottom: 140px; /* Jarak dari bawah layar */
+  right: 10px; /* Jarak dari kanan layar */
+  z-index: 100; /* Ikon berada di atas elemen lainnya */
+  text-decoration: none; /* Hilangkan garis bawah pada tautan */
+ }
+
+  .whatsapp-icon {
+  width: 50px; /* Ukuran ikon */
+  height: 50px; /* Tinggi ikon */
+  border-radius: 50%; /* Membuat ikon berbentuk bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Memberikan bayangan agar terlihat elegan */
+  transition: transform 0.1s ease; /* Animasi saat ikon di-hover */
+ }
+
+  .whatsapp-icon:hover {
+  transform: scale(1.3); /* Membesarkan ikon sedikit saat di-hover */
+ }
+
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5f0606;
+    color: white;
+    padding: 10px 10px;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 400px;     /* Atur tinggi gambar sesuai kebutuhan */
+    object-fit: cover; /* Pangkas gambar agar muat tanpa distorsi */
+  }
+
+  header img {
+    height: 40px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+ 
+  /* Hero Section Styles */
+  .hero {
+    text-align: center;
+    background: #efeded;
+    padding: 15px;
+  }
+
+  .hero ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 700px; /* Batasan lebar untuk menjaga konten tetap rapi */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom */
+      gap: 10px;
+    }
+
+    .hero li {
+      font-size: 16px;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero li::before {
+      content: "✅"; /* Emoji yang diinginkan */
+      margin-right: 10px;
+      color: #00ff0d;
+    }
+
+    /* Section Styles */
+  section {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  section h2 p {
+   margin-bottom: 3px; /* Jarak antara heading dan teks di bawahnya */
+   font-size: 18px; /* Ukuran heading untuk menonjol */
+   text-align: center; /* Memastikan heading tetap di tengah */
+    }
+
+    section#armada p {
+   margin-top: 3px; /* Jarak antara teks deskripsi dan heading */
+   margin-bottom: 3px; /* Jarak antara deskripsi dan bagian kartu armada */
+   font-size: 18px; /* Ukuran teks deskripsi */
+   text-align: center; /* Memastikan teks tetap sejajar di tengah */
+   line-height: 1.0; /* Mengatur jarak antar baris */
+   }
+
+   .card {
+   display: flex; /* Mengatur susunan elemen secara horizontal */
+   gap: 30px; /* Memberi jarak antar elemen kartu */
+   justify-content: center; /* Menyelaraskan elemen secara rata tengah */
+   align-items: flex-start; /* Menyelaraskan elemen ke atas */
+   }
+
+   .card div {
+   display: flex; /* Mengatur tata letak konten di dalam card */
+   flex-direction: column; /* Susunan konten di dalam card secara vertikal */
+   }
+
+  .card img {
+   width: 100%; /* Gambar menyesuaikan ukuran container */
+   max-width: 180px; /* Lebar maksimum gambar */
+   height: auto; /* Memastikan gambar proporsional */
+ }
+
+ .card p {
+  margin: 5px 0; /* Mengatur jarak vertikal antar paragraf */
+  font-size: 15px; /* Ukuran teks deskripsi */
+ }
+
+ .button-container {
+  display: flex; /* Mengatur tombol sebagai baris */
+  flex-direction: column; /* Tombol tetap vertikal */
+  gap: 10px; /* Memberikan jarak antar tombol */
+  width: 100%; /* Menyelaraskan tombol dengan container */
+  }
+
+ .btn {
+    display: inline-block;
+    padding: 10px 15px; /* Ukuran tombol */
+    font-size: 16px; /* Ukuran teks tombol */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 120px; /* Lebar minimum tombol */
+    }
+  .btn-whatsapp {
+    background-color: #25D366;
+  }
+
+  .btn-telpon {
+    background-color: #007BFF;
+  }
+
+  .btn:hover {
+    opacity: 0.9; /* Efek hover untuk tombol */
+    }
+
+    /* Footer Styles */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5f0606;
+    color: white;
+    padding: 20px 40px;
+  }
+
+  .footer-item {
+    text-align: center;
+  }
+
+  footer img {
+      height: 50px;
+    }
+
+    .footer-logo-text {
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+    margin-top: 3px;
+    }
+
+  .footer-center {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   line-height: 1.2; /* Mengatur jarak baris untuk teks di bagian Business Hours */
+   }
+
+   .footer-center p {
+   margin: 0; /* Menghilangkan margin default pada paragraf */
+   font-size: 18px; /* Ukuran font yang seragam */
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footer-right p {
+    margin: 3px 0;
+  }
